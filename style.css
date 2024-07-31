@@ -46,6 +46,10 @@ body {
     padding-bottom: 200px;
 
 }
+
+.resources {
+  align-items: center;
+}
 /*
  * Cover
  */
