@@ -13,7 +13,7 @@ a:hover {
 .btn-default,
 .btn-default:hover,
 .btn-default:focus {
-  color: #333;
+  color: #eb0808;
   text-shadow: none; /* Prevent inheritence from `body` */
   background-color: #fff;
   border: 1px solid #fff;
@@ -24,57 +24,83 @@ a:hover {
  * Base structure
  */
 
-html,
-body {
-  height: 100%;
-  background-color: #1e96db;
-
+html{
+  scroll-behavior: smooth;
 }
+
 body {
-  color: #fff;
+  color: #ffffff;
+  background-color: #0d6efd;
   text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
 
-.home {
-    background-color: #1e96db;
-    background-image: url("assests/addiction-home.png");
-    background-size: cover;
-    background-blend-mode: multiply;
-    background-repeat: no-repeat;
-    padding-top: 100px;
-    padding-bottom: 200px;
+.header {
+  position: fixed;
+  width: 100%;
+  background-color: #0d47a1;
+}
+
+.header__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.navbar {
+  background-color: #0d47a1;
+
+}
+.navbar-text,
+.navbar-brand,
+.nav__link{
+  color: #ffffff;
+}
+
+.nav-link {
+  color: #ffffff;
+}
+
+.main {
+
+}
+
+.section {
+  height: 100vh;
+
+}
+
+.section:nth-child(1) {
+  background-image: url("assests/addiction-home.png");
+  background-size: cover;
+  background-color: #0d6efd;
+  background-blend-mode: multiply;
+  padding-top: 200px;
+  padding-bottom: 400px;
+}
+.section:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1e88e5;
+  padding-top: 100px;
+}
+.section:nth-child(3) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #42a5f5;
+}
+
+
+.heading{
 
 }
 
 .resources {
   align-items: center;
 }
-/*
- * Cover
- */
 
-.cover {
-  padding: 0 20px;
-}
-.cover .btn-lg {
-  padding: 10px 20px;
-  font-weight: bold;
-}
 
-/*
- * Affix and center
- */
-
-@media (min-width: 768px) {
-  /* Pull out the header and footer */
-  .masthead {
-    position: fixed;
-    top: 0;
-  }
-  /* Start the vertical centering */
-  .site-wrapper-inner {
-    vertical-align: middle;
-  }
-
-}

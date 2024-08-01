@@ -9,54 +9,52 @@
 
 </head>
 <body>
-  <header>
-    <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Addiction Recovery</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Resources</a>
-            </li>
-          </ul>
+  <header class="header">
+    <div class="header__content">
+      <a class="navbar-brand" href="#">Addiction Recovery</a>
+      <nav class="navbar sticky-top navbar-expand-lg ">
+        <div class="container-fluid">
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#resources">Resources</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#education">Education</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
+
   </header>
 
   <main class="main">
     <section class="section">
-      <div class="home">
-        <div class="-image">
-
-        </div>
-  
-        <h1 class="cover-heading">What is Addiction?</h1>
+      <div class="home" id="home">
+        <div class="-image"></div>
+        <h1>About</h1>
+        <P class="lead">This website is a project to help addicts, including myself, with their recovery journey.</P>
+        <p class="lead">Herein are resources and education material to help with. </p> 
+        <h2 class="home-heading">What is Addiction?</h2>
         <p class="lead">Addiction is the state of being physically and mentally dependent on a particular substance, 
-        and unable to stop taking it without incurring adverse effects.</p>
+          and unable to stop taking it without incurring adverse effects.</p>
         <p></p>
+        <button type="button" class="btn btn-light btn-lg">Continue</button>
+
       </div>
-      
-
-  </section>
+    </section>
 
   <section class="section">
-    <h2>About</h2>
-      <P class="lead">This website is a project to help with my recovery journey from alcohol addiction.</P>
-      <p class="lead">Here-in are resources and education material to help with. </p> 
-  </section>
-
-  <section class="section">
-    <div class="resources">
+    <div class="resources" id="resources">
       <h2>Resources</h2>
 
       <div class="container">
@@ -79,7 +77,7 @@
                 <h5 class="card-title">AA 319 Group</h5>
                 <img src="assests/319lilaclogo-2.webp" class="card-img-top" alt="...">
                 <p class="card-text">This is a 24/7 AA group that meets via zoom.</p>
-                <a href="https://319aagroup.org/" class="btn btn-primary" target="_blank"> 24/7 AA meeting</a>
+                <a href="https://319aagroup.org/" class="btn btn-primary" target="_blank"> Join meeting</a>
               </div>
             </div>
           </div>
@@ -89,7 +87,7 @@
               <div class="card-body">
                 <h5 class="card-title">SMART Recovery</h5>
                 <img src="assests/SMART.webp" class="card-img-top" alt="...">
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <p class="card-text">SMART Recovery is the leading, evidence-informed approach to overcoming addictive behaviors and leading a balanced life. SMART is stigma-free and emphasizes self-empowerment.</p>
                 <a href="https://smartrecovery.org/" class="btn btn-primary">SMART Recovery</a>
               </div>
             </div>
@@ -104,12 +102,26 @@
   </section>
 
   <section class="section">
-    <h2> Educacation Materials</h2>
-    <div class="Videos">
+    <div class="education" id="education">
+      <h2> Education Materials</h2>
+
+      <div class="container overflow-hidden text-center">
+        <div class="row gx-5">
+          <div class="col">
+           <div class="p-3"><iframe width="560" height="315" src="https://www.youtube.com/embed/PY9DcIMGxMs?si=yQerNzbmcDFdSPbF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+          </div>
+          <div class="col">
+            <div class="p-3"><iframe width="560" height="315" src="https://www.youtube.com/embed/66cYcSak6nE?si=8l5w5Uu4GncrlY5q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+          </div>
+          <div class="col">
+            <div class="p-3"><iframe width="560" height="315" src="https://www.youtube.com/embed/EuvHBlyLTro?si=4k1sgMazf9jp0L8q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+          </div>
+        </div>
+      </div>
 
     </div>
   </section>
-  
+
   </main>
 
 
