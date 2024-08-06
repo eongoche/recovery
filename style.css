@@ -97,6 +97,9 @@ body {
   padding-top: 100px;
 }
 
+.container{
+  --bs-gutter-x: 7rem;
+}
 .heading{
   margin-bottom: 100px;
 }
