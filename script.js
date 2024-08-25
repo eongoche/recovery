@@ -18,3 +18,22 @@ window.addEventListener('scroll',() =>{
     })
 });
 
+document.getElementById('feedbackForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const name = document.getElementById('name').value;
+    const message = document.getElementById('message').value;
+    
+    const feedbackItem = document.createElement('div');
+    feedbackItem.className = 'feedback-item';
+    feedbackItem.innerHTML = `
+        <h4>${name}</h4>
+        <p>${message}</p>
+    `;
+    
+    document.getElementById('feedbackList').prepend(feedbackItem);
+    
+    // Clear form
+    document.getElementById('name').value = '';
+    document.getElementById('message').value = '';
+});

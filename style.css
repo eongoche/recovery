@@ -30,10 +30,13 @@ html{
 }
 
 body {
-  color: #ffffff;
+  background-image: url("assests/addiction-home.png");
+  background-size: cover;
   background-color: #0d6efd;
+  background-blend-mode: multiply;
+  color: #ffffff;
   text-align: center;
-  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+  overflow-x: hidden;
 }
 
 .header {
@@ -97,9 +100,6 @@ body {
   padding-top: 100px;
 }
 
-.container{
-  --bs-gutter-x: 7rem;
-}
 .heading{
   margin-bottom: 100px;
 }
@@ -113,4 +113,9 @@ body {
   margin-bottom: 20px;
 }
 
-
+.feedback-item {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
