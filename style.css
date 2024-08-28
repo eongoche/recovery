@@ -82,7 +82,7 @@ body {
   background-size: cover;
   background-color: #0d6efd;
   background-blend-mode: multiply;
-  padding-top: 200px;
+  padding-top: 120px;
   padding-bottom: 400px;
 }
 .section:nth-child(2) {
@@ -101,7 +101,7 @@ body {
 }
 
 .heading{
-  margin-bottom: 100px;
+  margin-bottom: 160px;
 }
 
 .subheading{
