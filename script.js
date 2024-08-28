@@ -41,8 +41,12 @@ function saveFeedback(name, message) {
     // Get existing feedback from localStorage
     let feedback = JSON.parse(localStorage.getItem('feedback')) || [];
     
-    // Add new feedback
-    feedback.push({ name: name, message: message, date: new Date() });
+    // Add new feedback with current timestamp
+    feedback.push({ 
+        name: name, 
+        message: message, 
+        timestamp: new Date().toISOString()
+    });
     
     // Save back to localStorage
     localStorage.setItem('feedback', JSON.stringify(feedback));
@@ -62,10 +66,21 @@ function loadFeedback() {
     feedback.reverse().forEach(function(item) {
         const feedbackItem = document.createElement('div');
         feedbackItem.className = 'feedback-item';
+        
+        // Format the date
+        const date = new Date(item.timestamp);
+        const formattedDate = date.toLocaleString('en-US', { 
+            year: 'numeric', 
+            month: 'long', 
+            day: 'numeric', 
+            hour: '2-digit', 
+            minute: '2-digit'
+        });
+        
         feedbackItem.innerHTML = `
             <h4>${item.name}</h4>
             <p>${item.message}</p>
-            <small>${new Date(item.date).toLocaleString()}</small>
+            <small>Posted on: ${formattedDate}</small>
         `;
         feedbackList.appendChild(feedbackItem);
     });
